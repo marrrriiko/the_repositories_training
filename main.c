@@ -1,14 +1,16 @@
-/* main.c */
-#include <stdio.h>
+/* main.c */ 
+#include <stdio.h> 
+#include <string.h> // Не забудьте подключить библиотеку для strlen
 
-#include "askname.h"
+#include "askname.h" 
 
-int main(int argc, char **argv)
-{
-    char first[255], last[255];
+int main(int argc, char **argv) 
+{ 
+    char first[255], last[255]; 
 
-    askname(first, last);
+    askname(first, last); 
 
-    printf("Hello, %s %s!\n", first, last);
-    return 0;
+    printf("Hello, %s %s!\n", first, last); 
+
+    return 0; 
 }
